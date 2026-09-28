@@ -44,3 +44,13 @@
     height: 200px;
     width: 300px;
 }
+
+.card {
+    padding: 2em;
+    height: max-content;
+    margin-bottom: 2em;
+}
+
+.imgs {
+    max-width: 100%;
+}
