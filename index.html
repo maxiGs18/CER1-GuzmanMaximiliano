@@ -7,14 +7,15 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="icon" type="image/png" href="image/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"/>
 
     <title>Fundacion Huellas del Puerto</title>
 </head>
-<body>
+<body class="body">
     <head>
         <!-- Logo Perros -->
          <div class="text-center">
-            <img src="image/Logo.png" alt="Logo Fundacion" id="logo">
+            <img src="image/Logo (1).png" alt="Logo Fundacion" id="logo">
         </div>
         <!-- Barra de navegacion -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -40,55 +41,91 @@
     </head>
 
     <!-- Codigo Principal 1ra pagina -->
-    <main>
+    <main">
         
-        <section class="container mt-5 text-start">
-            <h1>Bienvenido a Fundacion Huellas del Puerto</h1>
+        <!-- Seccion de Bienvenida y quien somos -->
+        <section class="container mt-5 text-center">
+            <h1 class="titulo">Bienvenido a Fundacion Huellas del Puerto</h1>
             <div class="row">
-                <p class="col-6">Somos una fundacion sin fines de lucro de Valparaiso dedicada al rescate, 
-                a la rehabilitacion y adopcion de perros y gatos en situacion de calle y/o abandono</p>
-                <img class="col-6" src="image/post_abandono_affinity.webp" alt="Foto Perro">
+                <p class="col-6 p-5 desc">Somos una fundacion sin fines de lucro de Valparaiso dedicada al rescate, 
+                a la rehabilitacion y adopcion de perros y gatos en situacion de calle y/o abandono que tenemos como 
+                mision el disminuir la tasa de animales en abandono o situacion de calle.</p>
+                <img class="col-6 fto_perro" src="image/Voluntario.jpg" alt="Foto Voluntariado">
             </div>
-
-
-
-
+            
+            <a href="galeria.html" class="btn btn-primary btn-lg mt-3">Ver mascotas en adopcion</a>
         </section>
 
+        <!-- Seleccion de mascotas destacadas -->
+        <section class="container mt-5">
+        <h2 class="text-center mb-4">Mascotas Destacadas</h2>
+            <div class="row g-4">     
+                <!-- Mascota Destacada 1 -->
+                <div class="col-4">
+                    <div class="card h-100 shadow-sm luna">
+                        <img src="image/Luna.jpg" class="card-img-top" alt="Foto de Luna">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Luna</h5>
+                            <p class="card-text">Una perrita muy dulce que fue rescatada hace un mes. ¡Lista para un nuevo hogar!</p>
+                        </div>
+                    </div>
+                </div>
+                
+                    <!-- Mascota Destacada 2 -->
+                <div class="col-4">
+                    <div class="card h-100 shadow-sm justify-content-center simba">
+                        <img src="image/Simba.jpg" class="card-img-top" alt="Foto de Simba">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Simba</h5>
+                            <p class="card-text">Gatito de 6 meses, muy juguetón. Se lleva excelente con otros animales.</p>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Mascota Destacada 3 -->
+                <div class="col-4">
+                    <div class="card h-100 shadow-sm max">
+                        <img src="image/Max.jpg" class="card-img-top" alt="Foto de Max">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Max</h5>
+                            <p class="card-text">Un perro adulto, muy tranquilo y obediente. Ideal para acompañar a personas mayores.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <!-- Seccion de Ayuda -->
+        <section class="container mt-5">
+            <h2 class="text-center mb-4">¿Como puedes Colaborar?</h2>
+        <div class="row p-5">
+            <div class="col-md-4 text-center">
+                <h3>Voluntariado</h3>
+                <p>Ayúdanos a cuidar y pasear a nuestros rescatados.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <h3>Hogar Temporal</h3>
+                <p>Brinda un espacio seguro mientras encuentran su familia definitiva.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <h3>Donaciones</h3>
+                <p>Aporta alimento, mantas o apoyo económico.</p>
+            </div>
+        </div>
+        </section>
     </main>
-    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- Footer Final de informacion de contacto -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <p>Contacto: contacto@huellasdelpuerto.cl | Teléfono: +56 9 1234 5678</p>
+        <p>Ubicación: Cerro Alegre, Valparaíso | Horario de visitas: Lun a Sab, 10:00 - 18:00 hrs.</p>
+        <div>
+            <i class="bi bi-envelope"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-whatsapp"></i>
+            <i class="bi bi-telephone"></i>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
